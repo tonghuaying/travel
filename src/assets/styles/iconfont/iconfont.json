@@ -6,6 +6,27 @@
   "description": "travel项目图标",
   "glyphs": [
     {
+      "icon_id": "632315",
+      "name": "star",
+      "font_class": "star",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "815553",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "973147",
+      "name": "huo1",
+      "font_class": "huo1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
       "icon_id": "615533",
       "name": "30_箭头向下_fill",
       "font_class": "30jiantouxiangxiafill",

@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <swiper  >
+        <swiper :options="swiperOption"  >
             <swiper-slide v-for="(page ,index) of pages " :key="index">
                 <div class="icon" v-for="item of page" :key="item.id">
                     <div class="icon-img">
@@ -64,8 +64,18 @@ export default {
         },
         {
           id: '0009',
-          url: 'static/images/icon1.png',
-          desc: '景点门票'
+          url: 'static/images/icon9.png',
+          desc: '植物园'
+        },
+        {
+          id: '0010',
+          url: 'static/images/icon10.png',
+          desc: '香山动物园'
+        },
+        {
+          id: '0011',
+          url: 'static/images/icon11.png',
+          desc: '隐贤山庄'
         }
       ]
     }
