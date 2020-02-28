@@ -1,7 +1,7 @@
 <template>
     <div class="icons">
         <swiper :options="swiperOption"  >
-            <swiper-slide v-for="(page ,index) of pages " :key="index">
+            <swiper-slide  v-for="(page ,index) of pages " :key="index">
                 <div class="icon" v-for="item of page" :key="item.id">
                     <div class="icon-img">
                         <img class="icon-img-content" :src="item.url" />
@@ -15,75 +15,22 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
-        pagination: '.swiper-pagination',
-        loop: true
-      },
-      iconsList: [
-        {
-          id: '0001',
-          url: 'static/images/icon1.png',
-          desc: '景点门票'
-        },
-        {
-          id: '0002',
-          url: 'static/images/icon2.png',
-          desc: '深圳必游'
-        },
-        {
-          id: '0003',
-          url: 'static/images/icon3.png',
-          desc: '夜场狂欢'
-        },
-        {
-          id: '0004',
-          url: 'static/images/icon4.png',
-          desc: '世界之窗'
-        },
-        {
-          id: '0005',
-          url: 'static/images/icon5.png',
-          desc: '一日游'
-        },
-        {
-          id: '0006',
-          url: 'static/images/icon6.png',
-          desc: '深圳动物园'
-        },
-        {
-          id: '0007',
-          url: 'static/images/icon7.png',
-          desc: '泡温泉'
-        },
-        {
-          id: '0008',
-          url: 'static/images/icon8.png',
-          desc: '东部华侨城'
-        },
-        {
-          id: '0009',
-          url: 'static/images/icon9.png',
-          desc: '植物园'
-        },
-        {
-          id: '0010',
-          url: 'static/images/icon10.png',
-          desc: '香山动物园'
-        },
-        {
-          id: '0011',
-          url: 'static/images/icon11.png',
-          desc: '隐贤山庄'
-        }
-      ]
+        // pagination: '.swiper-pagination',
+        // loop: true,
+        autoPlay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconsList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

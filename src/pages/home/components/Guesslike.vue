@@ -6,7 +6,7 @@
         </div>
         <div class="guess-like-list">
             <ul class="guess-like-ul">
-                <li class="guess-like-li" v-for="item of likeList" :key="item.id">
+                <li class="guess-like-li" v-for="item of list" :key="item.id">
                     <div class="guess-like-img">
                         <img class="like-img-content" :src="item.url" />
                     </div>
@@ -29,38 +29,11 @@
 <script>
 export default {
   name: 'HomeGuesslike',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      likeList: [
-        {
-          id: '0001',
-          url: 'static/images/place1.jpg',
-          title: '梦幻百花洲',
-          comment: '5578',
-          price: 25
-        },
-        {
-          id: '0002',
-          url: 'static/images/place2.jpg',
-          title: '观音山旅游风景区',
-          comment: '5578',
-          price: 25
-        },
-        {
-          id: '0003',
-          url: 'static/images/place3.jpg',
-          title: '水濂山乐民游艺园',
-          comment: '56',
-          price: 25
-        },
-        {
-          id: '0004',
-          url: 'static/images/place4.jpg',
-          title: '乐民冰雪世界',
-          comment: '578',
-          price: 25
-        }
-      ]
     }
   }
 }

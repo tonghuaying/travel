@@ -1,0 +1,191 @@
+{
+  "ret": true,
+  "data": {
+    "city": "深圳",
+    "swiperList": [
+      {
+        "id": "0001",
+        "url": "/static/images/swiper1.jpg"
+      },
+      {
+        "id": "0002",
+        "url": "/static/images/swiper3.jpg"
+      }
+    ],
+    "iconsList": [
+      {
+        "id": "0001",
+        "url": "static/images/icon1.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "url": "static/images/icon2.png",
+        "desc": "深圳必游"
+      },
+      {
+        "id": "0003",
+        "url": "static/images/icon3.png",
+        "desc": "夜场狂欢"
+      },
+      {
+        "id": "0004",
+        "url": "static/images/icon4.png",
+        "desc": "世界之窗"
+      },
+      {
+        "id": "0005",
+        "url": "static/images/icon5.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "0006",
+        "url": "static/images/icon6.png",
+        "desc": "深圳动物园"
+      },
+      {
+        "id": "0007",
+        "url": "static/images/icon7.png",
+        "desc": "泡温泉"
+      },
+      {
+        "id": "0008",
+        "url": "static/images/icon8.png",
+        "desc": "东部华侨城"
+      },
+      {
+        "id": "0009",
+        "url": "static/images/icon9.png",
+        "desc": "植物园"
+      },
+      {
+        "id": "0010",
+        "url": "static/images/icon10.png",
+        "desc": "香山动物园"
+      },
+      {
+        "id": "0011",
+        "url": "static/images/icon11.png",
+        "desc": "隐贤山庄"
+      }
+    ],
+    "placeList": [
+      {
+        "id": "0001",
+        "url": "static/images/place1.jpg",
+        "desc": "乐民水上乐园",
+        "price": 105
+      },
+      {
+        "id": "0002",
+        "url": "static/images/place2.jpg",
+        "desc": "健康活水世界",
+        "price": 27
+      },
+      {
+        "id": "0003",
+        "url": "static/images/place3.jpg",
+        "desc": "飘雪乐园",
+        "price": 28
+      },
+      {
+        "id": "0004",
+        "url": "static/images/place4.jpg",
+        "desc": "乐民冰雪世界",
+        "price": 20
+      },
+      {
+        "id": "0005",
+        "url": "static/images/place5.jpg",
+        "desc": "水濂山",
+        "price": 105
+      },
+      {
+        "id": "0006",
+        "url": "static/images/place6.jpg",
+        "desc": "东城榕树湾泳健会SPA水疗",
+        "price": 27
+      },
+      {
+        "id": "0007",
+        "url": "static/images/place7.jpg",
+        "desc": "龙凤山庄影视渡假村",
+        "price": 60
+      },
+      {
+        "id": "0008",
+        "url": "static/images/place8.jpg",
+        "desc": "观音山旅游风景区",
+        "price": 68
+      },
+      {
+        "id": "0009",
+        "url": "static/images/place9.jpg",
+        "desc": "梦幻百花洲",
+        "price": 25
+      }
+    ],
+    "likeList": [
+      {
+        "id": "0001",
+        "url": "static/images/place1.jpg",
+        "title": "梦幻百花洲",
+        "comment": "5578",
+        "price": 25
+      },
+      {
+        "id": "0002",
+        "url": "static/images/place2.jpg",
+        "title": "观音山旅游风景区",
+        "comment": "5578",
+        "price": 25
+      },
+      {
+        "id": "0003",
+        "url": "static/images/place3.jpg",
+        "title": "水濂山乐民游艺园",
+        "comment": "56",
+        "price": 25
+      },
+      {
+        "id": "0004",
+        "url": "static/images/place4.jpg",
+        "title": "乐民冰雪世界",
+        "comment": "578",
+        "price": 25
+      }
+    ],
+    "weekenList": [
+      {
+        "id": "0001",
+        "url": "static/images/weeken1.jpg",
+        "name": "深圳周边游",
+        "desc": "远离城市拥堵，去周边开启清新假期吧。"
+      },
+      {
+        "id": "0002",
+        "url": "static/images/weeken2.jpg",
+        "name": "清远周边逛",
+        "desc": "人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？"
+      },
+      {
+        "id": "0003",
+        "url": "static/images/weeken3.jpg",
+        "name": "浮在海上的绿洲",
+        "desc": "南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊"
+      },
+      {
+        "id": "0004",
+        "url": "static/images/weeken4.jpg",
+        "name": "深圳必打卡",
+        "desc": "来到深圳，你需要来这里签到"
+      },
+      {
+        "id": "0005",
+        "url": "static/images/weeken5.jpg",
+        "name": "粤东泡汤好去处",
+        "desc": "全时四季的温泉，度假的天堂，这里独特的矿物质温泉是您养生、养颜疗神的宝地"
+      }
+    ]
+  }
+}
