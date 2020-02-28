@@ -7,10 +7,12 @@
         <span class="iconfont">&#xe63e;</span>
         输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
-        <span>{{this.city}}</span>
-        <span class="iconfont">&#xe673;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+          <span>{{this.city}}</span>
+          <span class="iconfont">&#xe673;</span>
+      </div>
+    </router-link>
 </div>
 
 </template>
@@ -26,26 +28,27 @@ export default {
 @import '~styles/varibles.styl'
  .header
     display: flex;
-    line-height: .86rem;
-    background: $bgcolor;
-    color: #fff;
+    line-height: $headerHeight
+    background: $bgcolor
+    color: #fff
     .header-left
-      width: .64rem;
-      float: left;
-      padding-left: .08rem;
-      display: block;
+      width: .64rem
+      float: left
+      padding-left: .08rem
+      display: block
     .header-input
-        flex: 1;
-        height: .64rem;
-        margin-left: .22rem;
-        background: #fff;
-        margin-top: .12rem;
-        border-radius: .1rem;
-        color: #ccc;
-        line-height: .64rem;
-        padding-left: .3rem;
+        flex: 1
+        height: .64rem
+        margin-left: .22rem
+        background: #fff
+        margin-top: .12rem
+        border-radius: .1rem
+        color: #ccc
+        line-height: .64rem
+        padding-left: .3rem
     .header-right
-      width: 1.24rem;
-      flota: right;
-      text-align: center;
+      width: 1.24rem
+      flota: right
+      text-align: center
+      color: #fff
 </style>
