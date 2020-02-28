@@ -5,9 +5,6 @@
                 <div class="title border-topbottom">当前城市</div>
                 <div class="button-list">
                     <div class="button">深圳</div>
-                    <div class="button">深圳</div>
-                    <div class="button">深圳</div>
-                    <div class="button">深圳</div>
                 </div>
             </div>
             <div class="area">
@@ -16,7 +13,7 @@
                     <div class="button" v-for="item of hot" :key="item.id">{{item.name}}</div>
                 </div>
             </div>
-            <div class="area" v-for="(item, key) of list" :key="key">
+            <div class="area" v-for="(item, key) of list" :key="key" :ref="key">
                 <div class="title border-topbottom">{{key}}</div>
                 <ul class="area-list">
                     <li class="area-list-item" v-for="innerItem of item" :key="innerItem.id">{{innerItem.name}}</li>
@@ -31,11 +28,22 @@ export default {
   name: 'CityList',
   props: {
     list: Object,
-    hot: Array
+    hot: Array,
+    letter: String
   },
   mounted () {
     // console.log(this.$refs.wrapper)
     this.scroll = new BScroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+    //   console.log(this.letter)
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        // console.log(element)
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 
 }
