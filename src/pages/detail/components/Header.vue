@@ -70,6 +70,7 @@ export default {
     color: #fff
     background: $bgcolor
     font-size: .32rem
+    z-index: 2
     .header-fixed-back
         position: absolute
         left: .2rem
