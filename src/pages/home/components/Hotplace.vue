@@ -3,13 +3,13 @@
         <div class="hotplace-title"><span class="iconfont hot-icon">&#xe60d;</span>本周热门榜单</div>
         <div class="hotplace-content">
             <ul class="place-ul">
-                <li class="place-li" v-for="item of list" :key="item.id">
+                <router-link  tag="li" class="place-li" v-for="item of list" :key="item.id" :to="'/detail/' + item.id">
                     <div class="place-img">
                         <img class="place-img-content" :src="item.url" />
                     </div>
                     <p class="place-desc">{{item.desc}}</p>
                     <p class="place-price">¥<span class="number">{{item.price}}</span>起</p>
-                </li>
+                </router-link>
             </ul>
         </div>
     </div>

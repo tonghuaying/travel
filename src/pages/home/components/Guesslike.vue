@@ -6,7 +6,7 @@
         </div>
         <div class="guess-like-list">
             <ul class="guess-like-ul">
-                <li class="guess-like-li" v-for="item of list" :key="item.id">
+                <router-link tag="li" class="guess-like-li" v-for="item of list" :key="item.id" :to="'/detail/' + item.id" >
                     <div class="guess-like-img">
                         <img class="like-img-content" :src="item.url" />
                     </div>
@@ -21,7 +21,7 @@
                         </div>
                         <p class="like-price"><span class="num">¥{{item.price}}</span>起</p>
                     </div>
-                </li>
+                </router-link>
             </ul>
         </div>
     </div>
