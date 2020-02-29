@@ -1,25 +1,29 @@
 <template>
 <div>
     <div class="banner" @click="handleBannerClick">
-        <img class="banner-img" src="static/images/banner1.jpg" />
+        <img class="banner-img" :src="bannerImg" />
         <div class="banner-info">
             <div class="banner-number">
-                <span class="iconfont like-icon">&#xe635;</span> 56
+                <span class="iconfont like-icon">&#xe635;</span> {{this.bannerImgs.length}}
             </div>
-            <div class="banner-title">八达岭长城(AAAAA景区)</div>
+            <div class="banner-title">{{this.sightName}}</div>
         </div>
     </div>
-    <common-gallary :imgs="imgs" v-show="showGallary" @close="handleCloseGallary"></common-gallary>
+    <common-gallary :imgs="bannerImgs" v-show="showGallary" @close="handleCloseGallary"></common-gallary>
 </div>
 </template>
 <script>
 import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    bannerImgs: Array
+  },
   data () {
     return {
-      showGallary: false,
-      imgs: ['static/images/banner1.jpg', 'static/images/banner2.jpg']
+      showGallary: false
     }
   },
   components: {
