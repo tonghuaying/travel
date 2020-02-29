@@ -17,6 +17,7 @@ import HomeHotplace from './components/Hotplace'
 import HomeGuesslike from './components/Guesslike'
 import HomeWeeken from './components/Weeken'
 import axios from 'axios'
+import {mapState} from 'vuex'
 export default {
   name: 'Home',
   components: {
@@ -34,12 +35,16 @@ export default {
       iconsList: [],
       placeList: [],
       likeList: [],
-      weekenList: []
+      weekenList: [],
+      lastCity: ''
     }
+  },
+  computed: {
+    ...mapState(['city'])
   },
   methods: {
     getHomeInfo () {
-      axios.get('api/index.json').then(this.getHomeInfoSucc).catch((e) => {
+      axios.get('api/index.json?city=' + this.city).then(this.getHomeInfoSucc).catch((e) => {
         console.log('error')
       })
     },
@@ -58,7 +63,14 @@ export default {
     }
   },
   mounted () {
+    this.lastCity = this.city
     this.getHomeInfo()
+  },
+  activated () {
+    if (this.lastCity !== this.city) {
+      this.lastCity = this.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>

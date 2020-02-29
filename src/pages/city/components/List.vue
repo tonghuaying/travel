@@ -54,11 +54,11 @@ export default {
   watch: {
     letter () {
     //   console.log(this.letter)
-      if (this.letter) {
-        const element = this.$refs[this.letter][0]
-        // console.log(element)
-        this.scroll.scrollToElement(element)
-      }
+      // if (this.letter) {
+      // const element = this.$refs[this.letter][0]
+      // console.log(element)
+      // this.scroll.scrollToElement(element)
+      // }
     }
   }
 
